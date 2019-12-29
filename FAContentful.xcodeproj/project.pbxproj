@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		50B3941323B9267E0001018B /* FAContenful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FAContenful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B3941323B9267E0001018B /* FAContentful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FAContentful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3941623B9267E0001018B /* FAContenful.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAContenful.h; sourceTree = "<group>"; };
 		50B3941723B9267E0001018B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B3941E23B926AA0001018B /* Contentful.Locale+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contentful.Locale+Equatable.swift"; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		50B3940923B9267E0001018B = {
 			isa = PBXGroup;
 			children = (
-				50B3941523B9267E0001018B /* FAContenful */,
+				50B3941523B9267E0001018B /* FAContentful */,
 				50B3941423B9267E0001018B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +62,12 @@
 		50B3941423B9267E0001018B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50B3941323B9267E0001018B /* FAContenful.framework */,
+				50B3941323B9267E0001018B /* FAContentful.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50B3941523B9267E0001018B /* FAContenful */ = {
+		50B3941523B9267E0001018B /* FAContentful */ = {
 			isa = PBXGroup;
 			children = (
 				50B3941723B9267E0001018B /* Info.plist */,
@@ -77,7 +77,7 @@
 				50B3943023B927040001018B /* Protocols */,
 				50B3942623B926BB0001018B /* Extensions */,
 			);
-			path = FAContenful;
+			path = FAContentful;
 			sourceTree = "<group>";
 		};
 		50B3942623B926BB0001018B /* Extensions */ = {
@@ -134,9 +134,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		50B3941223B9267E0001018B /* FAContenful */ = {
+		50B3941223B9267E0001018B /* FAContentful */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50B3941B23B9267E0001018B /* Build configuration list for PBXNativeTarget "FAContenful" */;
+			buildConfigurationList = 50B3941B23B9267E0001018B /* Build configuration list for PBXNativeTarget "FAContentful" */;
 			buildPhases = (
 				50B3940E23B9267E0001018B /* Headers */,
 				50B3940F23B9267E0001018B /* Sources */,
@@ -147,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = FAContenful;
+			name = FAContentful;
 			productName = FAContenful;
-			productReference = 50B3941323B9267E0001018B /* FAContenful.framework */;
+			productReference = 50B3941323B9267E0001018B /* FAContentful.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50B3941223B9267E0001018B /* FAContenful */,
+				50B3941223B9267E0001018B /* FAContentful */,
 			);
 		};
 /* End PBXProject section */
@@ -356,7 +356,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContenful;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = FAContentful;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -382,7 +382,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContenful;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = FAContentful;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,7 +401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50B3941B23B9267E0001018B /* Build configuration list for PBXNativeTarget "FAContenful" */ = {
+		50B3941B23B9267E0001018B /* Build configuration list for PBXNativeTarget "FAContentful" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B3941C23B9267E0001018B /* Debug */,
