@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 50B3940D23B9267E0001018B /* Build configuration list for PBXProject "FAContenful" */;
+			buildConfigurationList = 50B3940D23B9267E0001018B /* Build configuration list for PBXProject "FAContentful" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -348,14 +348,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FAContenful/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FAContentful/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContenful;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContentful;
 				PRODUCT_NAME = FAContentful;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -374,14 +374,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FAContenful/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FAContentful/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContenful;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContentful;
 				PRODUCT_NAME = FAContentful;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -392,7 +392,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50B3940D23B9267E0001018B /* Build configuration list for PBXProject "FAContenful" */ = {
+		50B3940D23B9267E0001018B /* Build configuration list for PBXProject "FAContentful" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B3941923B9267E0001018B /* Debug */,

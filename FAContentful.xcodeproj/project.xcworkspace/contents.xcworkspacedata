@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FAContenful.xcodeproj">
+      location = "self:/Users/abdullahoglu/Desktop/Projects/Frameworks/FAContenful/FAContentful.xcodeproj">
    </FileRef>
 </Workspace>
