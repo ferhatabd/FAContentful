@@ -62,7 +62,7 @@ final public class ContentfulService {
     
     /// Dispatch queue for handling the tasks related to Contenful
     private let contentQueue = DispatchQueue(label: "com.ferhatab.contentfulapi",
-                                             qos: .userInitiated)
+                                             qos: .userInteractive)
     
     
     
