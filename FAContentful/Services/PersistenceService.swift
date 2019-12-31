@@ -36,6 +36,9 @@ final public class PersistenceService {
     //
     // MARK: Public properties
     //
+    public var moc: NSManagedObjectContext {
+        managedObjectContext
+    }
     
     
     
