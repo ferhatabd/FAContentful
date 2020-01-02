@@ -471,10 +471,13 @@ final public class ContentfulService {
             throw ContentfulErrors.persistenceNotConfigured("")
         }
         
-        do {
-            try ps.coreDataStore.save()
-        } catch {
-            throw error
+        /// check if there are changes to be saved
+        if ps.moc.hasChanges {
+            do {
+                try ps.coreDataStore.save()
+            } catch {
+                throw error
+            }
         }
     }
 }
