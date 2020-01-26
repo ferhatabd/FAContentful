@@ -27,6 +27,8 @@ public struct Markdown {
         let styling = DefaultStyling()
         styling.headingStyling.isBold = true
         styling.paragraphStyling.baseFont = baseFont
+        styling.boldStyling.isBold = true
+        styling.boldStyling.baseFont = .sfMonoFont(ofSize: 16, weight: .bold)
         
         // Code blocks.
         styling.codeBlockStyling.baseFont = .sfMonoFont(ofSize: 8.0, weight: .regular)
