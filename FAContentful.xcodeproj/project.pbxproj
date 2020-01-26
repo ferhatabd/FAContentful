@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C9462006490A1D11612226A /* Pods_FAContentful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1BD3B2A5BAB9E1B03B9E2C /* Pods_FAContentful.framework */; };
 		504A99BC23BC9CD100CB44E4 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 504A99BB23BC9CD100CB44E4 /* Contentful */; };
 		504A99BF23BC9D3400CB44E4 /* ContentfulPersistence in Frameworks */ = {isa = PBXBuildFile; productRef = 504A99BE23BC9D3400CB44E4 /* ContentfulPersistence */; };
+		506803C623DDBB6F00733638 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506803C523DDBB6F00733638 /* Markdown.swift */; };
+		506803C823DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506803C723DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift */; };
+		506803CA23DDBCB800733638 /* UIKit+SFFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506803C923DDBCB800733638 /* UIKit+SFFont.swift */; };
 		50B3941823B9267E0001018B /* FAContenful.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B3941623B9267E0001018B /* FAContenful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50B3942223B926AA0001018B /* Contentful.Locale+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3941E23B926AA0001018B /* Contentful.Locale+Equatable.swift */; };
 		50B3942323B926AA0001018B /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3941F23B926AA0001018B /* Date+.swift */; };
@@ -25,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		506803C523DDBB6F00733638 /* Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
+		506803C723DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
+		506803C923DDBCB800733638 /* UIKit+SFFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+SFFont.swift"; sourceTree = "<group>"; };
 		50B3941323B9267E0001018B /* FAContentful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FAContentful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3941623B9267E0001018B /* FAContenful.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAContenful.h; sourceTree = "<group>"; };
 		50B3941723B9267E0001018B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +47,9 @@
 		50B3943223B927130001018B /* PersistenceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		50B3943323B927130001018B /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		50B3943423B927130001018B /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		6474A3AEF9AE69D19CFFFA6E /* Pods-FAContentful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAContentful.debug.xcconfig"; path = "Target Support Files/Pods-FAContentful/Pods-FAContentful.debug.xcconfig"; sourceTree = "<group>"; };
+		7B1BD3B2A5BAB9E1B03B9E2C /* Pods_FAContentful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAContentful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12EC467CB3146C5CB3DD987 /* Pods-FAContentful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAContentful.release.xcconfig"; path = "Target Support Files/Pods-FAContentful/Pods-FAContentful.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +59,38 @@
 			files = (
 				504A99BF23BC9D3400CB44E4 /* ContentfulPersistence in Frameworks */,
 				504A99BC23BC9CD100CB44E4 /* Contentful in Frameworks */,
+				2C9462006490A1D11612226A /* Pods_FAContentful.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C6EB875A9D7849C2461236F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6474A3AEF9AE69D19CFFFA6E /* Pods-FAContentful.debug.xcconfig */,
+				A12EC467CB3146C5CB3DD987 /* Pods-FAContentful.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		506803CB23DDBCD800733638 /* Rich Text */ = {
+			isa = PBXGroup;
+			children = (
+				506803C523DDBB6F00733638 /* Markdown.swift */,
+				506803C723DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift */,
+			);
+			path = "Rich Text";
+			sourceTree = "<group>";
+		};
 		50B3940923B9267E0001018B = {
 			isa = PBXGroup;
 			children = (
 				50B3941523B9267E0001018B /* FAContentful */,
 				50B3941423B9267E0001018B /* Products */,
+				3C6EB875A9D7849C2461236F /* Pods */,
+				FC837FDFF252639752AD381C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +122,7 @@
 				50B3941F23B926AA0001018B /* Date+.swift */,
 				50B3942023B926AA0001018B /* EntryArray+Combine.swift */,
 				50B3942123B926AA0001018B /* State+Equatable.swift */,
+				506803C923DDBCB800733638 /* UIKit+SFFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -101,6 +133,7 @@
 				50B3942723B926CB0001018B /* ContentfulCredentials.swift */,
 				50B3942823B926CB0001018B /* Module.swift */,
 				50B3942923B926CB0001018B /* Session.swift */,
+				506803CB23DDBCD800733638 /* Rich Text */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +157,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FC837FDFF252639752AD381C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B1BD3B2A5BAB9E1B03B9E2C /* Pods_FAContentful.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -142,6 +183,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50B3941B23B9267E0001018B /* Build configuration list for PBXNativeTarget "FAContentful" */;
 			buildPhases = (
+				DD7A146177F38E37611E17B0 /* [CP] Check Pods Manifest.lock */,
 				50B3940E23B9267E0001018B /* Headers */,
 				50B3940F23B9267E0001018B /* Sources */,
 				50B3941023B9267E0001018B /* Frameworks */,
@@ -207,18 +249,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DD7A146177F38E37611E17B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FAContentful-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50B3940F23B9267E0001018B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506803C623DDBB6F00733638 /* Markdown.swift in Sources */,
 				50B3942F23B927000001018B /* ContentServing.swift in Sources */,
 				50B3942C23B926CB0001018B /* Session.swift in Sources */,
 				50B3942523B926AA0001018B /* State+Equatable.swift in Sources */,
 				50B3942223B926AA0001018B /* Contentful.Locale+Equatable.swift in Sources */,
+				506803C823DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift in Sources */,
 				50B3942423B926AA0001018B /* EntryArray+Combine.swift in Sources */,
 				50B3943623B927130001018B /* PersistenceService.swift in Sources */,
 				50B3943723B927130001018B /* Server.swift in Sources */,
+				506803CA23DDBCB800733638 /* UIKit+SFFont.swift in Sources */,
 				50B3943823B927130001018B /* StateMachine.swift in Sources */,
 				50B3943523B927130001018B /* ContentfulService.swift in Sources */,
 				50B3942323B926AA0001018B /* Date+.swift in Sources */,
@@ -352,6 +422,7 @@
 		};
 		50B3941C23B9267E0001018B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6474A3AEF9AE69D19CFFFA6E /* Pods-FAContentful.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,7 +439,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.19.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContentful;
 				PRODUCT_NAME = FAContentful;
 				SKIP_INSTALL = YES;
@@ -380,6 +451,7 @@
 		};
 		50B3941D23B9267E0001018B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12EC467CB3146C5CB3DD987 /* Pods-FAContentful.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,7 +468,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.19.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContentful;
 				PRODUCT_NAME = FAContentful;
 				SKIP_INSTALL = YES;
