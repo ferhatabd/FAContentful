@@ -7,8 +7,11 @@
 //
 
 import Foundation
+#if canImport(markymark)
 import markymark
+#endif
 
+@available (tvOS, unavailable)
 public struct Markdown {
     
     public static func attributedText(text: String, styling: Styling = styling()) -> NSAttributedString {

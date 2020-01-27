@@ -107,10 +107,8 @@
 			children = (
 				50B3941723B9267E0001018B /* Info.plist */,
 				50B3941623B9267E0001018B /* FAContenful.h */,
-				50B3942D23B926D10001018B /* Models */,
-				50B3943923B927180001018B /* Services */,
-				50B3943023B927040001018B /* Protocols */,
-				50B3942623B926BB0001018B /* Extensions */,
+				50D0E2B423DE9BB60088F63E /* ios */,
+				50D0E2B323DE9BAD0088F63E /* Shared */,
 			);
 			path = FAContentful;
 			sourceTree = "<group>";
@@ -133,7 +131,6 @@
 				50B3942723B926CB0001018B /* ContentfulCredentials.swift */,
 				50B3942823B926CB0001018B /* Module.swift */,
 				50B3942923B926CB0001018B /* Session.swift */,
-				506803CB23DDBCD800733638 /* Rich Text */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,6 +152,25 @@
 				50B3943423B927130001018B /* StateMachine.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		50D0E2B323DE9BAD0088F63E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				50B3942D23B926D10001018B /* Models */,
+				50B3943923B927180001018B /* Services */,
+				50B3943023B927040001018B /* Protocols */,
+				50B3942623B926BB0001018B /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		50D0E2B423DE9BB60088F63E /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				506803CB23DDBCD800733638 /* Rich Text */,
+			);
+			path = ios;
 			sourceTree = "<group>";
 		};
 		FC837FDFF252639752AD381C /* Frameworks */ = {

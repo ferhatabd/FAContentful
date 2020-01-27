@@ -8,9 +8,12 @@
 
 
 import Foundation
-import markymark
 import Contentful
+#if canImport(markymark)
+import markymark
+#endif
 
+@available(tvOS, unavailable)
 public class SVGAttributedStringBlockBuilder: LayoutBlockBuilder<NSMutableAttributedString> {
     
     // MARK: LayoutBuilder
