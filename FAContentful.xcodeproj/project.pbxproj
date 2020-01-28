@@ -10,7 +10,7 @@
 		2C9462006490A1D11612226A /* Pods_FAContentful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1BD3B2A5BAB9E1B03B9E2C /* Pods_FAContentful.framework */; };
 		504A99BC23BC9CD100CB44E4 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 504A99BB23BC9CD100CB44E4 /* Contentful */; };
 		504A99BF23BC9D3400CB44E4 /* ContentfulPersistence in Frameworks */ = {isa = PBXBuildFile; productRef = 504A99BE23BC9D3400CB44E4 /* ContentfulPersistence */; };
-		506803C623DDBB6F00733638 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506803C523DDBB6F00733638 /* Markdown.swift */; };
+		5058E6EF23E028D200CC5F4D /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5058E6EE23E028D200CC5F4D /* Markdown.swift */; };
 		506803C823DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506803C723DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift */; };
 		506803CA23DDBCB800733638 /* UIKit+SFFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506803C923DDBCB800733638 /* UIKit+SFFont.swift */; };
 		50B3941823B9267E0001018B /* FAContenful.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B3941623B9267E0001018B /* FAContenful.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		506803C523DDBB6F00733638 /* Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
+		5058E6EE23E028D200CC5F4D /* Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
 		506803C723DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
 		506803C923DDBCB800733638 /* UIKit+SFFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+SFFont.swift"; sourceTree = "<group>"; };
 		50B3941323B9267E0001018B /* FAContentful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FAContentful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,11 +75,10 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		506803CB23DDBCD800733638 /* Rich Text */ = {
+		50865D1B23E0279D00C109F4 /* Rich Text */ = {
 			isa = PBXGroup;
 			children = (
-				506803C523DDBB6F00733638 /* Markdown.swift */,
-				506803C723DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift */,
+				5058E6EE23E028D200CC5F4D /* Markdown.swift */,
 			);
 			path = "Rich Text";
 			sourceTree = "<group>";
@@ -157,6 +156,7 @@
 		50D0E2B323DE9BAD0088F63E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				50865D1B23E0279D00C109F4 /* Rich Text */,
 				50B3942D23B926D10001018B /* Models */,
 				50B3943923B927180001018B /* Services */,
 				50B3943023B927040001018B /* Protocols */,
@@ -168,9 +168,17 @@
 		50D0E2B423DE9BB60088F63E /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				506803CB23DDBCD800733638 /* Rich Text */,
+				50F06BB623DFF28D0083B777 /* Rich Text */,
 			);
 			path = ios;
+			sourceTree = "<group>";
+		};
+		50F06BB623DFF28D0083B777 /* Rich Text */ = {
+			isa = PBXGroup;
+			children = (
+				506803C723DDBC7700733638 /* SVGAttributedStringBlockBuilder.swift */,
+			);
+			path = "Rich Text";
 			sourceTree = "<group>";
 		};
 		FC837FDFF252639752AD381C /* Frameworks */ = {
@@ -295,8 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506803C623DDBB6F00733638 /* Markdown.swift in Sources */,
 				50B3942F23B927000001018B /* ContentServing.swift in Sources */,
+				5058E6EF23E028D200CC5F4D /* Markdown.swift in Sources */,
 				50B3942C23B926CB0001018B /* Session.swift in Sources */,
 				50B3942523B926AA0001018B /* State+Equatable.swift in Sources */,
 				50B3942223B926AA0001018B /* Contentful.Locale+Equatable.swift in Sources */,

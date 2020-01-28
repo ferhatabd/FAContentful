@@ -9,18 +9,23 @@
 import Foundation
 #if canImport(markymark)
 import markymark
+#elseif canImport(markymark_tvOS)
+import markymark_tvOS
 #endif
 
-@available (tvOS, unavailable)
+
+
 public struct Markdown {
     
     public static func attributedText(text: String, styling: Styling = styling()) -> NSAttributedString {
         let markyMark = MarkyMark() { $0.setFlavor(ContentfulFlavor()) }
         let markdownItems = markyMark.parseMarkDown(text)
         let config = MarkDownToAttributedStringConverterConfiguration(styling: styling)
+        
+        #if os(iOS)
         // Configure markymark to leverage the Contentful images API when encountering inline SVGs.
         config.addLayoutBlockBuilder(SVGAttributedStringBlockBuilder())
-        
+        #endif
         let converter = MarkDownConverter(configuration: config)
         let attributedText = converter.convert(markdownItems)
         return attributedText
@@ -29,14 +34,16 @@ public struct Markdown {
     public static func styling(baseFont: UIFont = .systemFont(ofSize: 16.0, weight: .light)) -> Styling {
         let styling = DefaultStyling()
         styling.headingStyling.isBold = true
-        styling.paragraphStyling.baseFont = baseFont
         styling.boldStyling.isBold = true
-        styling.boldStyling.baseFont = .sfMonoFont(ofSize: 16, weight: .bold)
+        if #available(iOS 8, *) {
+            styling.paragraphStyling.baseFont = baseFont
+            styling.boldStyling.baseFont = .systemFont(ofSize: 16, weight: .bold)
+        } else {
+            styling.paragraphStyling.baseFont = baseFont.withSize(32)
+            styling.boldStyling.baseFont = .systemFont(ofSize: 32, weight: .bold)
+        }
         
-        // Code blocks.
-        styling.codeBlockStyling.baseFont = .sfMonoFont(ofSize: 8.0, weight: .regular)
-        styling.codeBlockStyling.backgroundColor = UIColor(white: 0.9, alpha: 1.0)
-        styling.codeBlockStyling.textColor = .black
+        
         
         return styling
     }
