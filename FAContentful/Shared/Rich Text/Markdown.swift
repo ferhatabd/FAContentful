@@ -35,15 +35,8 @@ public struct Markdown {
         let styling = DefaultStyling()
         styling.headingStyling.isBold = true
         styling.boldStyling.isBold = true
-        if #available(iOS 8, *) {
-            styling.paragraphStyling.baseFont = baseFont
-            styling.boldStyling.baseFont = .systemFont(ofSize: 16, weight: .bold)
-        } else {
-            styling.paragraphStyling.baseFont = baseFont.withSize(32)
-            styling.boldStyling.baseFont = .systemFont(ofSize: 32, weight: .bold)
-        }
-        
-        
+        styling.paragraphStyling.baseFont = baseFont
+        styling.boldStyling.baseFont = .systemFont(ofSize: 16, weight: .bold)
         
         return styling
     }
