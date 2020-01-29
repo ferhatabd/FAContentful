@@ -60,8 +60,17 @@ final public class PersistenceService {
                   client: Client) {
         
         
-        // get the stor url
-        PersistenceService.storeUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last?.appendingPathComponent("\(name).sqlite")
+        // get the store url
+        
+        let targetDirectory: FileManager.SearchPathDirectory
+        
+        if #available(tvOS 13, *) {
+            targetDirectory = .cachesDirectory
+        } else {
+            targetDirectory = .documentDirectory
+        }
+        
+        PersistenceService.storeUrl = FileManager.default.urls(for: targetDirectory, in: .userDomainMask).last?.appendingPathComponent("\(name).sqlite")
         
         // create the persistence model
         let model = PersistenceModel(spaceType: spaceType,
