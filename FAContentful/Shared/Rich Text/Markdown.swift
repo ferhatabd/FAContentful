@@ -36,7 +36,7 @@ public struct Markdown {
         styling.headingStyling.isBold = true
         styling.boldStyling.isBold = true
         styling.paragraphStyling.baseFont = baseFont
-        styling.boldStyling.baseFont = .systemFont(ofSize: 16, weight: .bold)
+        styling.boldStyling.baseFont = baseFont
         
         return styling
     }
