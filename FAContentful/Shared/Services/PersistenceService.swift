@@ -114,7 +114,7 @@ final public class PersistenceService {
                                        options: [NSMigratePersistentStoresAutomaticallyOption : true,
                                                  NSInferMappingModelAutomaticallyOption : true])
         } catch {
-            fatalError("can't initialize the persistentStoreCoordinator")
+            preconditionFailure("can't initialize the persistentStoreCoordinator")
         }
         
         managedObjectContext.persistentStoreCoordinator = psc

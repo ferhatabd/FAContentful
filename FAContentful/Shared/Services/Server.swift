@@ -30,7 +30,7 @@ final public class ContentfulServer {
     public let contentfulStateMachine: StateMachine<ContentfulService>
     
     public func resetCredentialsAndResetLocaleIfNecessary() {
-        guard let defaultCredentials = ContentfulCredentials.default else { fatalError("configure Contentful credentials earlier") }
+        guard let defaultCredentials = ContentfulCredentials.default else { preconditionFailure("configure Contentful credentials earlier") }
         
         // Retain state from last ContentfulService, but ensure we are using a locale that is available in default space.
         var state = contentful.stateMachine.state
