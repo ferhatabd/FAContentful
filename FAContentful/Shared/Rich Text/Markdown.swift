@@ -31,13 +31,26 @@ public struct Markdown {
         return attributedText
     }
     
-    public static func styling(baseFont: UIFont = .systemFont(ofSize: 16.0, weight: .light)) -> Styling {
+    public static func styling(baseFont: UIFont = .systemFont(ofSize: 16.0, weight: .light), textColor: UIColor = .black) -> Styling {
         let styling = DefaultStyling()
         styling.headingStyling.isBold = true
+        //
         styling.boldStyling.isBold = true
-        styling.paragraphStyling.baseFont = baseFont
         styling.boldStyling.baseFont = baseFont
-        
+        styling.boldStyling.textColor = textColor
+        //
+        styling.paragraphStyling.baseFont = baseFont
+        styling.paragraphStyling.textColor = textColor
+        //
+        styling.listStyling.baseFont = baseFont
+        styling.listStyling.textColor = textColor
+        //
+        styling.italicStyling.baseFont = baseFont
+        styling.italicStyling.isItalic = true
+        //
+        styling.strikeThroughStyling.baseFont = baseFont
+        styling.strikeThroughStyling.textColor = textColor
+        //
         return styling
     }
 }
