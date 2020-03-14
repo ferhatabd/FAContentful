@@ -14,7 +14,7 @@ import markymark_tvOS
 #endif
 
 
-
+@available(watchOS, unavailable)
 public struct Markdown {
     
     public static func attributedText(text: String, styling: Styling = styling()) -> NSAttributedString {

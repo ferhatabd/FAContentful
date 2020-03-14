@@ -78,9 +78,16 @@
 		50865D1B23E0279D00C109F4 /* Rich Text */ = {
 			isa = PBXGroup;
 			children = (
-				5058E6EE23E028D200CC5F4D /* Markdown.swift */,
 			);
 			path = "Rich Text";
+			sourceTree = "<group>";
+		};
+		50902B9A241CF08A00B446B2 /* tvos+ios */ = {
+			isa = PBXGroup;
+			children = (
+				5058E6EE23E028D200CC5F4D /* Markdown.swift */,
+			);
+			path = "tvos+ios";
 			sourceTree = "<group>";
 		};
 		50B3940923B9267E0001018B = {
@@ -106,6 +113,7 @@
 			children = (
 				50B3941723B9267E0001018B /* Info.plist */,
 				50B3941623B9267E0001018B /* FAContenful.h */,
+				50902B9A241CF08A00B446B2 /* tvos+ios */,
 				50D0E2B423DE9BB60088F63E /* ios */,
 				50D0E2B323DE9BAD0088F63E /* Shared */,
 			);
