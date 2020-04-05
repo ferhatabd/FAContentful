@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FAContentful"
-  spec.version      = "1.19.4"
+  spec.version      = "1.19.5"
   spec.summary      = "Wrapper API for a combination of Contentful & ContentfulPersistence APIs"
 
   # This description is used to generate tags and improve search results.
@@ -67,7 +67,7 @@ APIs"
    
 
   #  When using multiple platforms
-  spec.ios.deployment_target = "12.0"
+  spec.ios.deployment_target = "10.0"
   spec.tvos.deployment_target = "13.0"
   spec.watchos.deployment_target = "6.0"
   
@@ -81,7 +81,7 @@ APIs"
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       =  { :path => "/Users/abdullahoglu/Desktop/Projects/Frameworks/FAContentful/FAContentful", :tag => "#{spec.version}" }
+  spec.source       =  { :git => "https://github.com/ferhatabd/FAContentful.git", :branch => "master", :tag => "#{spec.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
