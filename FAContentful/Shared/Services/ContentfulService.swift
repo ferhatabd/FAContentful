@@ -177,6 +177,11 @@ final public class ContentfulService {
     /// Persistence handler -- will be made available upon demand
     public var persistentStore: PersistenceService?
     
+    /// Access to persistent CoreData store
+    public var dataStore: CoreDataStore?  {
+        persistentStore?.coreDataStore
+    }
+    
     /* ------------------------------------------------------- */
     // MARK: Init
     /* ------------------------------------------------------- */
@@ -272,8 +277,9 @@ final public class ContentfulService {
     ///   - resource: The resource for which the state determination is being made.
     ///   - completion: A completion handler returning a stateful preview API resource.
     /// - Returns: A boolean value indicating if the state resolution logic will be executed.
-    @discardableResult public func willResolveStateIfNecessary<T>(for resource: T,
-                                                                  then completion: @escaping (Result<T>, T?) -> Void) -> Bool
+    @discardableResult
+    public func willResolveStateIfNecessary<T>(for resource: T,
+                                               then completion: @escaping (Result<T>, T?) -> Void) -> Bool
         where T: FieldKeysQueryable & EntryDecodable & Resource & StatefulResource {
             
             switch stateMachine.state.api {
@@ -466,6 +472,7 @@ final public class ContentfulService {
     }
     
     
+    /// Saves the context if there are any changes
     public func save() throws {
         guard let ps = persistentStore else {
             throw ContentfulErrors.persistenceNotConfigured("")
