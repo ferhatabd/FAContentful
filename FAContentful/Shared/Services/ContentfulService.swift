@@ -472,6 +472,7 @@ final public class ContentfulService {
     }
     
     
+    
     /// Saves the context if there are any changes
     public func save() throws {
         guard let ps = persistentStore else {

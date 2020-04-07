@@ -131,12 +131,13 @@ final public class PersistenceService {
     //
     // MARK: Public methods
     //
+    
     /// Executes a fetch request
     /// - Parameter fetchRequest: Pre-configured fetch request to execute
     /// - Returns
     ///  If the execution is successful the method will return a **[T]** if not, it will return **nil**
     ///
-    public func execute<T: EntryPersistable>(fetchRequest: NSFetchRequest<T>) -> [T]? {
+    public func execute<T>(fetchRequest: NSFetchRequest<T>) -> [T]? {
         do {
             let items = try moc.fetch(fetchRequest)
             return items
