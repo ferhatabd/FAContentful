@@ -137,8 +137,8 @@ APIs"
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   spec.dependency 'Contentful'	
-   spec.dependency 'ContentfulPersistenceSwift'
+   spec.dependency 'Contentful', '5.0.9'
+   spec.dependency 'ContentfulPersistenceSwift', '0.15.0'
    spec.ios.dependency 'markymark'
    spec.tvos.dependency 'markymark-tvOS'
 end
