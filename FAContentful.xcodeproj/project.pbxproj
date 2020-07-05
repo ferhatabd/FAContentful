@@ -471,7 +471,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.19.9;
+				MARKETING_VERSION = 1.20.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContentful;
 				PRODUCT_NAME = FAContentful;
 				SKIP_INSTALL = YES;
@@ -500,7 +500,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.19.9;
+				MARKETING_VERSION = 1.20.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.FAContentful;
 				PRODUCT_NAME = FAContentful;
 				SKIP_INSTALL = YES;
@@ -538,7 +538,7 @@
 			repositoryURL = "https://github.com/contentful/contentful.swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.6;
+				minimumVersion = 5.0.9;
 			};
 		};
 		504A99BD23BC9D3400CB44E4 /* XCRemoteSwiftPackageReference "contentful-persistence" */ = {
@@ -546,7 +546,7 @@
 			repositoryURL = "https://github.com/contentful/contentful-persistence.swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.14.0;
+				minimumVersion = 0.15.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
