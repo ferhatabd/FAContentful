@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FAContentful"
-  spec.version      = "1.19.9"
+  spec.version      = "1.19.91"
   spec.summary      = "Wrapper API for a combination of Contentful & ContentfulPersistence APIs"
 
   # This description is used to generate tags and improve search results.
@@ -137,8 +137,8 @@ APIs"
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   spec.dependency 'Contentful', '5.0.9'
-   spec.dependency 'ContentfulPersistenceSwift', '0.15.0'
+   spec.dependency 'Contentful'
+   spec.dependency 'ContentfulPersistenceSwift'
    spec.ios.dependency 'markymark'
    spec.tvos.dependency 'markymark-tvOS'
 end
