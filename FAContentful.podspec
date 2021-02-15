@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FAContentful"
-  spec.version      = "1.20.0"
+  spec.version      = "1.20.101"
   spec.summary      = "Wrapper API for a combination of Contentful & ContentfulPersistence APIs"
 
   # This description is used to generate tags and improve search results.
