@@ -153,7 +153,7 @@ final public class ContentfulService {
             case .success(let _locales):
                 locales = _locales.items
             default:
-                locales = [.americanEnglish(), .german(), .turkish()]
+                locales = [.americanEnglish(), .turkish()]
             }
             semaphore.signal()
         }
